@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JS Library 2t</title>    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body onload="fetchBooks()">
+    <div class="container">
+      <h1>JS Library 2t</h1>
+      <div class="jumbotron">
+        <h3>Add New Book:</h3>
+        <form id="bookInputForm">
+          <div class="form-group">
+            <label for="bookTitleInput">Title</label>
+            <input type="text" class="form-control" id="bookTitleInput" placeholder="Title of the book" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="bookAuthorNameInput">Author</label>
+            <input type="text" class="form-control" id="bookAuthorNameInput" placeholder="Name of the author" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="bookPagesInput">Pages</label>
+            <input type="number" class="form-control" id="bookPagesInput" placeholder="Number of pages" autocomplete="off">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="readStatusInput">
+            <label class="form-check-label" for="readStatusInput">Read</label>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-primary">Add Book</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="bookListDiv">
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy 2t</p>
+      </div>    
+    </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
